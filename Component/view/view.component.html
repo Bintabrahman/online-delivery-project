@@ -1,0 +1,29 @@
+
+<h1>Customer</h1>
+<table class="table table-sm" image src = "../../../assets/">
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Full Name</th>
+        <th scope="col">Street Adress</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">Email</th>
+        <th scope="col">Delivery Area</th>
+        <th scope="col">Items</th>
+        <th scope="col">Action</th>
+      </tr>
+      <tr *ngFor="let Viw of view; let x = index;">
+        <td scope="row">{{x+1}}</td>
+        <td>{{Viw.fullname}}</td>
+        <td>{{Viw.street_adress}}</td>
+        <td>{{Viw.phone_number}}</td>
+        <td>{{Viw.email}}</td>
+        <td>{{Viw.delivery_area}}</td>
+        <td>{{Viw.items}}</td>
+        <td>
+        <button (click)="updatecustomer(Viw.id)" type = "btn"> <i class = "fa fa-edit"></i>Update</button>
+        <button (click)="deleteCustomer(Viw.id)" type = "btn" ><i class = "fa fa-trash-o fa-lg"></i>Delete</button>
+        <button (click)="ViewCustomer(Viw.email)">view</button>
+        </td>
+      </tr>
+      
+  </table>

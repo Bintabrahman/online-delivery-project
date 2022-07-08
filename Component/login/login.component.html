@@ -1,0 +1,17 @@
+<div class="container" image src = "../../../assets/biyan.jpg" >
+    <body>
+    <form class="logform" name="loginform" onSubmit="return validateForm();" action="main.html" method="post">
+      <h2 class="text-center ">Login</h2><br>
+        <input type="text" id="username" class="form-control" placeholder="username"/> 
+        <input type="password" id="password" class="form-control" placeholder="password">
+      <label class="checkbox">
+        <input type="checkbox" value="rememberMe"> Remember me</label> 
+      <button class="btn btn-lg  btn-block loginbtn" type="submit"><a [routerLink]="['/form']">Login</a></button>
+      <div class="reset-links text-center"><a [routerLink]="['/sign-up']"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+      
+      
+      </div>
+    </form>
+    </body>
+  </div>
+    

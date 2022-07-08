@@ -1,0 +1,30 @@
+<div class="container-fluid px-1 py-5 mx-auto" >
+    <div class="row d-flex justify-content-center" >
+        <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center"  >
+            <h3>ONLINE FOOD DELIVERY</h3>
+            <div class="card">
+                <h5 class="text-center mb-4">Delivey Details</h5>
+                <form  class="form-card"   [formGroup] = "CreateCustomer" (ngSubmit) = "submit()">
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Full name<span class="text-danger"> * </span></label> <br> <input type="text" id="fullname" name="fullname" formControlName = "fullname"> </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Street Adress<span class="text-danger"> *</span></label> <br><input type="text" id="street_adress" name="street_adress" formControlName = "street_adress"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Phone number<span class="text-danger"> *</span></label> <br><input type="text" id="phone_number"  name="phone_number" formControlName = "phone_number"> </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Email<span class="text-danger"> *</span></label> <br><input type="text" id="email" name="email"  formControlName = "email"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Delivery Area<span class="text-danger"> *</span></label> <br><input type="text" id="delivery_area"  name="delivery_area"   formControlName = "delivery_area"> </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Items<span class="text-danger"> *</span></label> <br><input type="text" id="items"  name="items"   formControlName = "items"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">which type of food you want?<span class="text-danger"> *</span></label> <br><input type="text" id="ans" name="ans"> </div>
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="form-group col-sm-3"> <button type="submit" class="btn btn-lg  btn-block viewbtn ">Submit</button> </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

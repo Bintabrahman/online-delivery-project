@@ -1,0 +1,27 @@
+#tb{
+    border-bottom: 100vh;
+    color: white;
+}
+
+button{
+    margin-left: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+th{
+    padding: 12px;
+    height: 100%;
+    text-align: center;
+    border-top: 2pt solid gray;
+    border-bottom: 2px solid gray;
+    vertical-align:middle;
+
+}
+
+td{
+    text-align: center;
+    border-bottom: 1px solid gray;
+    vertical-align: middle;
+}
+
